@@ -1,33 +1,40 @@
-# Sources de données – Hydrogène et constantes
+# Sources - Donnees et lectures
 
-On ne stocke pas ici de gros fichiers spectrales (licence, taille, mise à jour).  
-On documente **où** les récupérer et comment les utiliser.
+On ne stocke pas de gros binaires. On pointe vers des sources ouvertes.
 
-## Spectres / raies de l'hydrogène
+## Spectroscopie / constantes (proxy labo)
 
-1. **NIST Atomic Spectra Database**  
-   - URL : https://physics.nist.gov/PhysRefData/ASD/lines_form.html  
-   - Requête typique : élément `H`, spectre de raies  
-   - Export possible en TSV / ASCII
+1. NIST ASD - https://physics.nist.gov/PhysRefData/ASD/lines_form.html
+2. CODATA - https://physics.nist.gov/cuu/Constants/
+3. Mesures 1S-2S / hyperfine H - labos de metrologie (papers recents).
 
-2. **CODATA** (constantes fondamentales)  
-   - https://physics.nist.gov/cuu/Constants/  
-   - Utile pour α, m_p/m_e, Rydberg, etc.
+Usage : comparer a QED ; un residu n'est pas une preuve d'onde.
 
-3. **Articles de précision** (structure hyperfine, 1S-2S)  
-   - Chercher les mesures récentes de la fréquence 1S-2S de l'hydrogène (laboratoires de métrologie).
+## Vide, energie noire, expansion
+
+- Conservation en univers en expansion : Carroll / Press / Turner 1992.
+- DESI / supernovae / Euclid : eventuel thawing de l'energie noire (indices 2024+, a confirmer).
+
+## Higgs / cosmologie
+
+- Metastabilite du vide electrofaible (ex. Markkanen et al. arXiv:1809.06923).
+- Transition electrofaible : dans le MS pur = crossover ; GW LISA => souvent physique au-dela du MS.
+
+## Trous noirs / information / rebond
+
+- Iles / courbe de Page (~2019-, revues 2025-2026).
+- Trou noir vers trou blanc / etoiles de Planck (Rovelli, Vidotto) : phenomenologie contrainte, pas etablie.
+- Selection naturelle cosmologique (Smolin) : programme fragile (masse max NS sous pression).
+
+## GW primordiales
+
+- LISA (transition de phase ~TeV si 1er ordre).
+- Pulsar timing arrays : fond stochastique, origines multiples.
 
 ## Fichiers locaux (optionnel)
-
-Si tu télécharges un export NIST, place-le par exemple dans :
 
 ```
 data/hydrogene/nist_H_lines.tsv
 ```
 
-(ne pas committer de très gros fichiers sans accord)
-
-## Utilisation prévue
-
-- Comparer des mesures tabulées aux prédictions QED.
-- Documenter tout écart résiduel (sans l'interpréter prématurément comme preuve d'onde primordiale).
+Ne pas committer de tres gros fichiers sans accord.
