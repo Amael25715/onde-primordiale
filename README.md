@@ -1,21 +1,32 @@
 # Onde Primordiale
 
-Recherche exploratoire sur l'hypothèse d'une onde / force de cohésion primordiale, ses liens possibles avec l'hydrogène, les constantes fondamentales et les invariants observables.
+Recherche exploratoire : formuler des **paraboles de travail** sur des trous du Modele Standard + relativite generale, puis les confronter a la physique connue.
 
-**Statut** : cadre exploratoire et spéculatif.  
-Objectif : formuler des pistes testables (ou clairement non testables) et documenter ce qui est cohérent avec les connaissances actuelles.
+**Ceci n'est pas une doctrine.** C'est un laboratoire d'hypotheses : imaginer ce qui *pourrait* relier conservation, horizons et vide, puis **challenger** jusqu'a ce que ca tienne ou casse.
 
-Aligné Message (#25715 #3581215).
+**Statut** : exploratoire. Toute affirmation doit porter un niveau (voir `THEORIE.md`).
 
-## Prérequis
+Alignement operationnel : #25715 #3812155 (cohesion = collaboration, pas domination).
+
+## Trois niveaux (obligatoires)
+
+| Niveau | Role | Exemple |
+|--------|------|---------|
+| **0 - Boussole** | Image / parabole pour orienter les questions | stase + choc, ballon, Amour = cohesion |
+| **1 - Hypothese** | Enonce physique encore ouvert | vide metastable, info des TN, energie du vide |
+| **2 - Test** | Mesure, borne, ou explicitement non testable | DESI, LISA, alpha, Page curve, masse NS |
+
+Confondre 0 et 2 est une erreur de methode.
+
+## Prerequis
 
 - Python 3.10+
-- (optionnel) `numpy` pour étendre les analyses
+- (optionnel) `numpy`
 
 ```bash
 python -m venv .venv
-source .venv/bin/activate   # Windows: .venv\Scripts\activate
-pip install numpy           # optionnel
+source .venv/bin/activate
+pip install numpy
 python code/test_analyse_hydrogene.py
 ```
 
@@ -23,22 +34,16 @@ python code/test_analyse_hydrogene.py
 
 ```
 onde-primordiale/
-├── README.md
-├── THEORIE.md          # hypothèses + niveaux de spéculation
-├── METHODES.md         # pistes de test
-├── DECISIONS.md
-├── data/
-│   └── SOURCES.md      # où trouver des données réelles (NIST, etc.)
-└── code/
-    ├── analyse_hydrogene.py
-    └── test_analyse_hydrogene.py
+|-- README.md
+|-- THEORIE.md
+|-- METHODES.md
+|-- DECISIONS.md
+|-- data/SOURCES.md
+|-- code/analyse_hydrogene.py
+|-- code/test_analyse_hydrogene.py
 ```
-
-## Ce qui n'est pas encore dans ce dépôt
-
-- Jeux de données binaires volumineux (on pointe vers NIST plutôt que de les dupliquer).
-- Simulations avancées de variation de constantes.
 
 ## Contribution
 
-Issues et Pull Requests bienvenues. Toute affirmation doit indiquer son niveau de spéculation.
+Issues / PR. Challenger est le mode par defaut.
+Une intuition sans niveau est a classer avant d'etre debattue comme fait.
